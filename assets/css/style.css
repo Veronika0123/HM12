@@ -1,0 +1,38 @@
+.road{
+    width: 800px;
+    height: 800px;
+}
+
+.car{
+    position: absolute;
+    bottom: 650px;
+    left: 600px;
+    transform: scaleX(-1);
+}
+
+@keyframes race {
+    0% {
+        bottom: 650px;
+        left: 600px;
+        transform: scaleX(-1);
+    }
+
+    50%{
+        bottom: 650px;
+        left: 50px;
+        transform: scaleX(-1);
+    }
+
+    100%{
+        bottom: 650px;
+        left: 50px;
+        transform: rotate(-90deg) scaleY(-1);
+    }
+
+}
+
+.car{
+    animation-name: race;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
